@@ -91,29 +91,3 @@ class Messages(Base):
 
 
 
-def addUser(user):
-    stmt = User(username = user.name,password = user.password, email= user.email,country = user.country , age = user.age)
-
-    session.add(stmt)
-
-
-
-def main():
-
-    while True:
-        print("select \n1- to add new user\n 2- show users \n 3- exit")
-        choice = int(input("enter your choice :  "))
-
-        match choice:
-            case 1:
-                print ("choice 1")
-
-            case 2:
-                print("second")
-
-            case 3:
-                break
-
-
-if __name__ == "__main__":
-    main()
