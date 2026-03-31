@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine,Integer,String, DateTime,Boolean,select,insert,update,delete,func,ForeignKey
+from sqlalchemy import create_engine,Integer,String, DateTime,select,insert,update,delete,func,ForeignKey
 from sqlalchemy.orm import DeclarativeBase , mapped_column,relationship,sessionmaker
 
 
