@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 from sqlalchemy import Integer, String, DateTime, ForeignKey, func
 from sqlalchemy.orm import mapped_column, relationship
 from my_database import Base
 
 
+=======
+from sqlalchemy import create_engine,Integer,String, DateTime,select,insert,update,delete,func,ForeignKey
+from sqlalchemy.orm import DeclarativeBase , mapped_column,relationship,sessionmaker
+
+
+engine = create_engine('sqlite:///yeechatty.db')
+Session = sessionmaker(bind=engine)
+session = Session()
+>>>>>>> 07c99dc419e963ab2c2e2f76a89f5273bdc662d4
 
 
 
