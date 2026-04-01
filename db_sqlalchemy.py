@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-from sqlalchemy import Integer, String, DateTime, ForeignKey, func
+from sqlalchemy import Integer, String, DateTime, ForeignKey, func,bollean
 from sqlalchemy.orm import mapped_column, relationship
 from my_database import Base
 
@@ -26,6 +26,7 @@ class User(Base):
     publicName = mapped_column(String(50),nullable= False,unique= True)
     email = mapped_column(String(100),nullable=False)
     country = mapped_column(String(30),nullable=False)
+    online_status = mapped_column(boolean, nullable = false , server_default= False)
     age = mapped_column(Integer,nullable=False)
     created = mapped_column(DateTime,server_default = func.now(),nullable=False)
 
